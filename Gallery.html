@@ -1,0 +1,239 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Welcome to My Website</title>
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Century Gothic', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+        
+        body {
+            position: relative;
+            min-height: 100vh; /* Full viewport height */
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .navbar a:hover {
+            color: #ff4081;
+        }
+
+        .navbar .logo a {
+            font-family: 'Lucida Handwriting', cursive;
+            color: turquoise;
+            font-size: 16px;
+        }
+
+        /* Header Section */
+        .header {
+            background-image: url('background2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 25vh;
+            color: lightpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Lucida Handwriting', cursive;
+            font-size: 3.5rem;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        .header h3{
+            font-family: inherit,cursive;
+            color: antiquewhite;
+        }
+
+        
+        .gallery {
+            padding: 115px 25px;
+            background-color: #FFF4F2;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+            font-family: 'Lucida Handwriting', cursive;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .gallery-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-item .info {
+            padding: 15px;
+        }
+
+        .gallery-item .info h3 {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .gallery-item .info p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+           bottom: 0;
+           width: 100%;
+           background-color: #333;
+           color: white;
+           text-align: center;
+           padding: 10px 0;
+           font-size: 0.9rem;
+           margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+   
+    <div class="navbar">
+        <div class="logo">
+            <a>ZF Website</a>
+        </div>
+        <div class="links">
+            <a href="Web%20Design%20Test.html">Home</a>
+            <a href="Web%20Design%20Test.html">About Me</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="Contact%20Page.html">Contact</a>
+        </div>
+    </div>
+
+ 
+    <div class="header">
+        <div>
+            <h1>Gallery</h1>
+            <h3> Welcome to my collection! Here, you'll find a showcase of my passion for all things related to automotive.</h3>
+        </div>
+    </div>
+
+    
+    <section id="gallery" class="gallery">
+        <div class="gallery-content">
+        
+            <div class="gallery-item">
+                <img src="Gallery%20pict%201.jpg" alt="Beautiful Beach">
+                <div class="info">
+                    <h3>G in the rain</h3>
+                    <p>ISO57, f2.8, 120mm, 1/500s.</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="gallery%20pict%202.jpg" alt="Subaru Impreza WRX">
+                <div class="info">
+                    <h3>AWD Sport Compact</h3>
+                    <p>ISO64, f2.8, 1/99s.</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="Gallery%20pict%203.jpg" alt="HRV V spec">
+                <div class="info">
+                    <h3>Compact SUV</h3>
+                    <p>ISO100, f2.8,24mm, 1/500s.</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="Gallery%20pict%204.html.jpg" alt="Colorado LTZ Sport">
+                <div class="info">
+                    <h3>White Pickup Truck</h3>
+                    <p>ISO 125, f2.8,120mm, 1/99s.</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="Gallery%20pict%205%20html.jpg" alt="CRV RS">
+                <div class="info">
+                    <h3>Deep Blue SUV</h3>
+                    <p>ISO 100, F2.8,24mm, 1/250s.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2024 ZF Resources, Inc. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
